@@ -179,6 +179,15 @@ get_status_led() {
 	dw33d)
 		status_led="$board:blue:status"
 		;;
+	e1700ac)
+		status_led="e1700ac:green:ds11"
+		;;
+	e600g)
+		status_led="e600g:green:ds10"
+		;;
+	e600gac)
+		status_led="e600gac:green:ds10"
+		;;
 	eap300v2)
 		status_led="engenius:blue:power"
 		;;

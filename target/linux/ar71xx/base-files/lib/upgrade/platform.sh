@@ -317,6 +317,9 @@ platform_check_image() {
 	db120|\
 	dr344|\
 	dw33d|\
+	e1700ac|\
+	e600g|\
+	e600gac|\
 	f9k1115v2|\
 	hornet-ub|\
 	mr12|\

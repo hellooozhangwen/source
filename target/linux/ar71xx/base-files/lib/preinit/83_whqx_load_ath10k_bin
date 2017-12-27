@@ -1,0 +1,27 @@
+#!/bin/sh
+
+. /lib/functions.sh
+. /lib/functions/system.sh
+
+do_load_ath10k_board_bin() {
+	local mtdblock=$(find_mtd_part art)
+
+	 [ -n "$mtdblock" ] || return
+
+	local cal_data_path="/lib/firmware/ath10k/"
+
+	# load board.bin
+	case $(board_name) in
+		e1700ac| e600gac)
+			if [ "$(ls -l /lib/firmware/ath10k/cal-pci-0000\:00\:00.0.bin 2>/dev/null|awk '{print$5}')" != "20480" ]; then
+				dd if=${mtdblock} of=${cal_data_path}/cal-pci-0000\:00\:00.0.bin bs=32 count=377 skip=640
+			fi
+
+		;;
+		*)
+		echo "Support to copy caldata is not there for $board"
+		;;
+	esac
+}
+
+boot_hook_add preinit_main do_load_ath10k_board_bin

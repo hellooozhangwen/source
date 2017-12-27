@@ -414,6 +414,18 @@ gl-inet)
 	ucidef_set_led_netdev "lan" "LAN" "$board:green:lan" "eth1"
 	ucidef_set_led_wlan "wlan" "WLAN" "$board:red:wlan" "phy0tpt"
 	;;
+e1700ac)
+        ucidef_set_led_usbdev "usb" "USB" "whqx:green:usb" "1-1"
+        ucidef_set_led_wlan "wlan2g" "WLAN2G" "whqx:green:wlan2g" "phy0tpt"
+        ;;
+e600g)
+        ucidef_set_led_usbdev "usb" "USB" "whqx:green:usb" "1-1"
+        ucidef_set_led_wlan "wlan2g" "WLAN2G" "whqx:green:wlan2g" "phy0tpt"
+	;;
+e600gac)
+        ucidef_set_led_usbdev "usb" "USB" "whqx:green:usb" "1-1"
+        ucidef_set_led_wlan "wlan2g" "WLAN2G" "whqx:green:wlan2g" "phy0tpt"
+	;;
 esr900)
 	ucidef_set_led_wlan "wlan2g" "WLAN 2.4 GHz" "engenius:blue:wlan-2g" "phy0tpt"
 	ucidef_set_led_wlan "wlan5g" "WLAN 5 GHz" "engenius:blue:wlan-5g" "phy1tpt"

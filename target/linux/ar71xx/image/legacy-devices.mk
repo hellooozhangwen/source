@@ -318,6 +318,42 @@ define LegacyDevice/dLAN_pro_1200_ac
 endef
 LEGACY_DEVICES += dLAN_pro_1200_ac
 
+define LegacyDevice/E1700AC_8M
+  DEVICE_TITLE := WHQX E1700AC-8M (8MB flash)
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-storage
+endef
+LEGACY_DEVICES += E1700AC_8M
+
+define LegacyDevice/E1700AC_16M
+  DEVICE_TITLE := WHQX E1700AC-16M (16MB flash)
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-storage
+endef
+LEGACY_DEVICES += E1700AC_16M
+
+define LegacyDevice/E600G_8M
+  DEVICE_TITLE := WHQX E600G-8M (8MB flash)
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-storage
+endef
+LEGACY_DEVICES += E600G_8M
+
+define LegacyDevice/E600G_16M
+  DEVICE_TITLE := WHQX E600G-16M (16MB flash)
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-storage
+endef
+LEGACY_DEVICES += E600G_16M
+
+define LegacyDevice/E600GAC_8M
+  DEVICE_TITLE := WHQX E600GAC-8M (8MB flash)
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-storage
+endef
+LEGACY_DEVICES += E600GAC_8M
+
+define LegacyDevice/E600GAC_16M
+  DEVICE_TITLE := WHQX E600GAC-16M (16MB flash)
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-storage
+endef
+LEGACY_DEVICES += E600GAC_16M
+
 define LegacyDevice/ESR900
   DEVICE_TITLE := EnGenius ESR900
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-ledtrig-usbport

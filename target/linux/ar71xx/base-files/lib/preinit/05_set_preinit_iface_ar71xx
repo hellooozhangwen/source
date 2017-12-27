@@ -17,6 +17,8 @@ set_preinit_iface() {
 	archer-c7 |\
 	bhr-4grv2 |\
 	dir-505-a1 |\
+	e600g |\
+	e600gac |\
 	gl-inet |\
 	jwap003 |\
 	pb42 |\
